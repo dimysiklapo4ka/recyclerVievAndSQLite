@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.d1mys1klapo4ka.studentholder.activity.MainActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.example.d1mys1klapo4ka.studentholder.fragment.FragmentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/recycler_view_activity">
+
+        <include layout="@layout/container_activity"/>
+    </fragment>
+
+</LinearLayout>
